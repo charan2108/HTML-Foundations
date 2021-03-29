@@ -1,0 +1,98 @@
+  <!-- The top level folder is called as root -->
+                              <!-- examplearts 
+                              rootfolder(contains the other files and folders) -->
+                              <!-- index.html
+                                  |
+                              movies
+                              music   parent of theese folders is examplearts
+                              theater    -->
+<!-- 
+                              examplearts(folder)
+                              index.html(file)
+                                  | 
+                              images(folder)
+                              images(file) -->
+                                  <!-- |
+                              Movies(Child of Thr examplearts(parent))
+                                  |  -->
+                              <!-- Cinema(folder)(child of movies and grandchild of examplearts)
+                              DVD  (folder)(child of movies and grandchild of examplearts)  
+                                  |
+                              music(folder)(child of the examplearts) -->
+                                  <!-- |        -->
+                              <!-- Theater(folder)(child of the examplearts) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div class="container">
+    <table style="width:100%;border:5px;">
+      <tr>
+          <th style="float:left;">Relative Link Type</th>
+          <th>Example</th>
+      </tr>
+      <tr>
+          <td>Same Folder<br/>
+            To link to a file in the same folder,<br/> just use the file
+            name. (Nothing else is needed.)
+          </td>  
+          <td>To link to music reviews from the music homepage:
+            <a href="reviews.html">Reviews</a></td>
+      </tr>
+      <tr>
+        <td>Child Folder<br/>
+            To link to a file in the same folder,<br/> just use the file
+            name. (Nothing else is needed.)
+          </td>  
+         <td>
+            To link to music listings from the homepage:
+            <a href="music/listings.html">Listings</a>
+         </td>     
+      </tr>
+      
+      <tr>
+        <td>GrandChild Folder<br/>
+        Use the name of the child folder, followed by a
+        forward slash,<br/> then the name of the grandchild
+        folder, followed by another forward slash, then the
+        file name.
+          </td>  
+          <td>
+            To link to DVD reviews from the homepage:
+            <a href="movies/dvd/reviews.html">
+            Reviews</a>
+          </td>
+      </tr>
+      <tr>
+        <td>Parent Folder<br/>
+            Use ../ to indicate the folder above<br/> the current one,
+            then follow it with the file name.
+            
+          </td>  
+          <td>
+            To link to the homepage from the music reviews:
+            <a href="../index.html">Home</a>
+          </td>
+      </tr>
+      <tr>
+        <td>Grand Parent Folder<br/>
+            Repeat the ../ to indicate that you want to go up
+            two folders (rather than one), then follow it with the
+            file name.
+          </td>  
+          <td>
+            To link to the homepage from the DVD reviews:
+            <a href="../../index.html">Home</a>
+          </td>
+      </tr>
+    </table>
+   </div>
+</body>
+</html>
+
+
+                              
